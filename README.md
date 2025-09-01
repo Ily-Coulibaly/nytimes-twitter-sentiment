@@ -84,10 +84,4 @@ To reproduce the analysis, follow these steps:
 
 ```
 
----
-
-This way, anyone cloning your repo and opening your notebook knows *exactly* what to install, where to put their API key, and what files/outputs to expect.  
-
-👉 Do you want me to also add a **“Project Workflow” diagram** (a simple flowchart image) to your README, so it visually shows the pipeline from *NYT API → Comments → Sentiment → Results*?
-```
 
