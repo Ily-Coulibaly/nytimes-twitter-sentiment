@@ -1,26 +1,8 @@
 # NYTimes Articles vs. Public Comments Sentiment Analysis
 
-An NLP project comparing the language and emotions used in New York Times coverage on the topic of drones versus reader reactions in comment sections, using Natural Language Processing (NLP) and emotion detection techniques.
+This NLP project analyzes the language and emotions used in New York Times coverage on the topic of drones versus reader reactions in comment sections, using Natural Language Processing (NLP) and emotion detection techniques.
 
-In early 2025, drones were frequently in the news for their growing roles in military operations, commercial applications like delivery, and public safety programs. Their prominence made them an ideal case study for testing how news framing contrasts with public response.  
-
----
-
-## Table of Contents
-Project Overview
-Key Features
-Setup
-Data Sources
-Analysis Pipeline
-Key Findings
-Technologies Used
-Results & Insights
-Project Structure
-Future Improvements
-
----
-
-## Project Overview
+## What this project does:
 
 This project explores the difference between media coverage and public sentiment regarding drones by:
 
@@ -28,6 +10,16 @@ This project explores the difference between media coverage and public sentiment
 - Collecting 6,018 public comments from 22 articles with active discussions
 - Performing sentiment analysis and emotion detection on both datasets
 - Comparing how media frames drone issues versus public reactions
+
+### [View Live Interactive Charts](https://yourusername.github.io/your-repo-name/interactive-charts.html)
+
+[![Interactive Charts Preview](https://img.shields.io/badge/📊_Interactive-Charts-blue?style=for-the-badge)](https://yourusername.github.io/your-repo-name/interactive-charts.html)
+
+*Click the link above to explore the interactive emotion analysis with multiple chart types and data controls.*
+
+### Static Preview
+![Chart Preview](images/chart-preview.png (<img width="960" height="591" alt="emotion-analysis-comparison" src="https://github.com/user-attachments/assets/b3aa86e5-bafc-4ea8-a7ea-1384d8856127" /> 
+)
 
 ---
 
