@@ -11,8 +11,7 @@ This project explores the difference between media coverage and public sentiment
 - Performing sentiment analysis and emotion detection on both datasets
 - Comparing how media frames drone issues versus public reactions
 
-(<img width="960" height="591" alt="emotion-analysis-comparison" src="https://github.com/user-attachments/assets/b3aa86e5-bafc-4ea8-a7ea-1384d8856127" /> 
-)
+<img width="960" height="591" alt="emotion-analysis-comparison" src="https://github.com/user-attachments/assets/b3aa86e5-bafc-4ea8-a7ea-1384d8856127" /> 
 
 ---
 
