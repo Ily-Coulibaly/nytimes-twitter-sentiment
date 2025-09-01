@@ -1,17 +1,19 @@
 # NYTimes Articles vs. Public Comments Sentiment Analysis
 
-This NLP project analyzes the language and emotions used in New York Times coverage on the topic of drones versus reader reactions in comment sections, using Natural Language Processing (NLP) and emotion detection techniques.
+## About
 
-## What this project does:
+Ever wonder if news articles on a specific topic aligns with how people really feel about actual topic ? This project digs into that question by analyzing the emotional language gap between professional journalism and public reactions.
 
-This project explores the difference between media coverage and public sentiment regarding drones by:
+Using NLP and emotion detection, this analysis compares how The New York Times covers drone stories versus how readers respond in the comments section by:
 
 - Fetching and analyzing 50 drone-related articles from The New York Times
 - Collecting 6,018 public comments from 22 articles with active discussions
 - Performing sentiment analysis and emotion detection on both datasets
 - Comparing how media frames drone issues versus public reactions
 
-<img width="960" height="591" alt="emotion-analysis-comparison" src="https://github.com/user-attachments/assets/b3aa86e5-bafc-4ea8-a7ea-1384d8856127" /> 
+<img width="953" height="430" alt="Screenshot 2025-09-01 at 9 09 09 AM" src="https://github.com/user-attachments/assets/840cf1cd-147f-4bbb-8368-4b701deb844d" />
+
+**Key Finding**: Public comments show 2.7x higher emotional intensity than articles, with fear dominating both datasets.
 
 ---
 
@@ -55,27 +57,41 @@ nltk.download('wordnet')
 4. Get a New York Times API key:
    - Visit [NYT Developer Portal](https://developer.nytimes.com/)
    - Create an account and generate an API key
-   - Replace the API key in the code
+   - Replace `YOUR_API_KEY` in the notebook with your actual key
+  
+5. Run your own analysis
 
-## Data Sources
+```python
+# Open the main notebook
+jupyter notebook _NYTDronesAnalysisIly.ipynb
 
-#### Articles Dataset
+# Or run programmatically
+from pynytimes import NYTAPI
+import text2emotion as te
+import pandas as pd
 
-- Source: New York Times Article Search API
-- Query: "drones and drone sightings"
-- Count: 50 articles
-- Time Range: 2012-2025
-- Fields: Headlines, abstracts, URLs, publication dates, sections
+# Initialize API and fetch data
+nyt = NYTAPI("YOUR_API_KEY", parse_dates=True)
+articles = nyt.article_search(query="drones", results=50)
 
-#### Comments Dataset
+# Run emotion analysis
+df_articles['emotions'] = df_articles['text'].apply(lambda x: te.get_emotion(x))
+df_comments['emotions'] = df_comments['text'].apply(lambda x: te.get_emotion(x))
 
-- Source: NYT Comments API via nytimes-scraper
-- Total Comments: 6,018 comments
-- Articles with Comments: 22 unique articles
-- Comment Types: 3,398 top-level comments, 2,620 replies
-- Fields: Comment body, timestamps, user info, article metadata
+# Generate comparison
+results = compare_sentiment(df_articles, df_comments)
+print(f"Media vs Public Fear Level: {results['fear_ratio']:.1f}x difference")
+```
 
-## Technologies Used
+**Expected Output:**
+```
+Total Comments: 6,018
+Unique Articles with Comments: 22
+Media vs Public Fear Level: 2.7x difference
+Charts saved to: visualizations/
+```
+
+## Tech Stack
 
 - **Python 3.12+**
 - **APIs**: NYTimes Article Search API, NYTimes Comments API
