@@ -1,15 +1,16 @@
-# NYTimes Articles vs. Public Comments Sentiment Analysis
+# NYTimes Articles vs. Public Sentiment Analysis - Drones
 
-Ever wonder if news articles on a specific topic aligns with how people really feel about actual topic ? This project digs into that question by analyzing the emotional language gap between professional journalism and public reactions.
+Ever wonder if news articles on a specific topic aligns with how people really feel about actual topic ? 
 
-## Project Overview
+This project analyzes how drones are framed in New York Times articles versus how the public perceives them through online discussions. Using Natural Language Processing (NLP) techniques, specifically [emotion detection](https://ieeexplore.ieee.org/document/8456602) and keyword analysis, we compare media coverage with public sentiment to identify disparities in discourse.
 
-Using NLP and emotion detection, this analysis compares how The New York Times covers drone stories versus how readers respond in the comments section by:
+## Research Questions
 
-- Fetching and analyzing 50 drone-related articles from The New York Times
-- Collecting 6,018 public comments from 22 articles with active discussions
-- Performing sentiment analysis and emotion detection on both datasets
-- Comparing how media frames drone issues versus public reactions
+- How do news articles frame drone-related topics compared to public comments?
+- What emotions dominate media coverage versus public discourse about drones?
+- What are the most frequently discussed aspects of drones in both contexts?
+
+## Key findings
 
 <img width="953" height="430" alt="Screenshot 2025-09-01 at 9 09 09 AM" src="https://github.com/user-attachments/assets/840cf1cd-147f-4bbb-8368-4b701deb844d" />
 
@@ -108,3 +109,6 @@ Charts saved to: visualizations/
 - [text2emotion Documentation](https://pypi.org/project/text2emotion/)
 - [NLTK Documentation](https://www.nltk.org/)
 
+## Contact
+
+For questions about my work or collaborations, please contact me at [icoulibaly1@babson.edu].
