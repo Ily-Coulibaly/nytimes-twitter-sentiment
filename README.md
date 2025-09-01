@@ -10,7 +10,7 @@ This project analyzes how drones are framed in New York Times articles versus ho
 
 ---
 
-## Research questions guiding the Project
+## Research Questions
 
 - How do news articles frame drone-related topics compared to public comments?
 - What emotions dominate media coverage versus public discourse about drones?
