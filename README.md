@@ -10,24 +10,7 @@ This project analyzes how drones are framed in New York Times articles versus ho
 
 ---
 
-## Research Questions
-
-- How do news articles frame drone-related topics compared to public comments?
-- What emotions dominate media coverage versus public discourse about drones?
-- What are the most frequently discussed aspects of drones in both contexts?
-
----
-
-## Key Features
-
-- Data Collection: Automated NYT article and comment retrieval using the NYT API
-- Text Processing: Advanced text cleaning and preprocessing
-- Keyword Analysis: Frequency analysis of the most common terms in articles
-- Emotion Detection: Multi-emotion analysis using text2emotion library
-- Comparative Analysis: Side-by-side comparison of media vs. public sentiment
-- Data Visualization: Charts and graphs showing sentiment distributions
-
-## 🛠️ Technical Skills Demonstrated
+## Technical Skills 
 
 <div align="center">
 
@@ -49,18 +32,24 @@ This project analyzes how drones are framed in New York Times articles versus ho
 
 </div>
 
-### Core Competencies
+---
 
-| Skill Area | Technologies & Methods | Application in Project |
-|------------|----------------------|----------------------|
-| **Data Collection** | NYT API, Web Scraping, Comment Extraction | Retrieved 50 articles and 6,018 comments with hierarchical processing |
-| **Text Processing** | NLTK, Regex, Text Cleaning, Tokenization | Preprocessed and normalized large-scale textual data |
-| **Emotion Analysis** | text2emotion, Multi-class Classification | Detected and quantified 5 core emotions across datasets |
-| **Statistical Analysis** | Frequency Analysis, Comparative Statistics | Analyzed keyword patterns and emotional distributions |
-| **Data Visualization** | Matplotlib, Statistical Plots | Created compelling visual narratives of findings |
-| **Research Design** | Comparative Analysis, Hypothesis Testing | Systematic comparison of media vs. public sentiment |
+## Research Questions
+
+- How do news articles frame drone-related topics compared to public comments?
+- What emotions dominate media coverage versus public discourse about drones?
+- What are the most frequently discussed aspects of drones in both contexts?
 
 ---
+
+## Key Features
+
+- Data Collection: Automated NYT article and comment retrieval using the NYT API
+- Text Processing: Advanced text cleaning and preprocessing
+- Keyword Analysis: Frequency analysis of the most common terms in articles
+- Emotion Detection: Multi-emotion analysis using text2emotion library
+- Comparative Analysis: Side-by-side comparison of media vs. public sentiment
+- Data Visualization: Charts and graphs showing sentiment distributions
 
 ## Setup 
 
@@ -124,19 +113,6 @@ Unique Articles with Comments: 22
 Media vs Public Fear Level: 2.7x difference
 Charts saved to: visualizations/
 ```
-
-## Tech Stack
-
-- **Python 3.12+**
-- **APIs**: NYTimes Article Search API, NYTimes Comments API
-- **Libraries**: 
-  - `pynytimes` - NYT API wrapper
-  - `nytimes-scraper` - Comment extraction
-  - `text2emotion` - Emotion detection
-  - `pandas` - Data manipulation
-  - `matplotlib` - Data visualization
-  - `nltk` - Natural language processing
-  - `re` - Text processing
 
 ## Links
 
