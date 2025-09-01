@@ -11,14 +11,7 @@ This project explores the difference between media coverage and public sentiment
 - Performing sentiment analysis and emotion detection on both datasets
 - Comparing how media frames drone issues versus public reactions
 
-### [View Live Interactive Charts](https://yourusername.github.io/your-repo-name/interactive-charts.html)
-
-[![Interactive Charts Preview](https://img.shields.io/badge/📊_Interactive-Charts-blue?style=for-the-badge)](https://yourusername.github.io/your-repo-name/interactive-charts.html)
-
-*Click the link above to explore the interactive emotion analysis with multiple chart types and data controls.*
-
-### Static Preview
-![Chart Preview](images/chart-preview.png (<img width="960" height="591" alt="emotion-analysis-comparison" src="https://github.com/user-attachments/assets/b3aa86e5-bafc-4ea8-a7ea-1384d8856127" /> 
+(<img width="960" height="591" alt="emotion-analysis-comparison" src="https://github.com/user-attachments/assets/b3aa86e5-bafc-4ea8-a7ea-1384d8856127" /> 
 )
 
 ---
