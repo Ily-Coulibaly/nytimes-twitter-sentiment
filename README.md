@@ -1,87 +1,112 @@
-# NYTimes vs. Twitter Sentiment Analysis using VADER
+# NYTimes Articles vs. Public Comments Sentiment Analysis
 
-This project explores how professional journalism compares with public opinion by analyzing sentiment in **New York Times articles** and **Twitter comments** on the same topic.  
-The goal is to see whether the tone used by journalists aligns with, or diverges from, the reactions of the general public.
+An NLP project comparing the language and emotions used in New York Times coverage on the topic of drones versus reader reactions in comment sections, using Natural Language Processing (NLP) and emotion detection techniques.
 
-For this study, the topic of **drones** was chosen. In early 2025, drones were frequently in the news for their growing roles in military operations, commercial applications like delivery, and public safety programs. Their prominence made them an ideal case study for testing how news framing contrasts with public response.  
-
----
-
-## What the project does
-- Collects articles and comments from the **New York Times API**.  
-- Gathers Twitter discussions on drones for the same timeframe.  
-- Applies the **VADER sentiment analyzer** to classify text as positive, negative, or neutral.  
-- Compares sentiment across both sources to reveal differences in framing and perception.  
-- Provides visualizations of sentiment distributions for clear comparison.  
+In early 2025, drones were frequently in the news for their growing roles in military operations, commercial applications like delivery, and public safety programs. Their prominence made them an ideal case study for testing how news framing contrasts with public response.  
 
 ---
 
-## Why this matters
-Media not only reports on events but also shapes how we perceive them. By looking at drones, a subject tied to both innovation and controversy, this project highlights the gap that can exist between **editorial tone** and **audience sentiment**.  
+## Table of Contents
+Project Overview
+Key Features
+Setup
+Data Sources
+Analysis Pipeline
+Key Findings
+Technologies Used
+Results & Insights
+Project Structure
+Future Improvements
 
 ---
 
-Perfect — I went through your notebook and pulled out the real setup steps someone needs to replicate your work. Instead of vague “install requirements,” your README can now walk through the exact flow. Here’s a rewritten **Setup** section for your README, based on your notebook:
+## Project Overview
 
-````markdown
-## Setup
+This project explores the difference between media coverage and public sentiment regarding drones by:
 
-To reproduce the analysis, follow these steps:
-
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/your-username/nytimes-twitter-sentiment.git
-   cd nytimes-twitter-sentiment
-````
-
-2. **Install dependencies**
-   The notebook uses Python with Jupyter. Install the required libraries:
-
-   ```bash
-   pip install pandas matplotlib nltk text2emotion
-   pip install pynytimes nytimes-scraper
-   ```
-
-3. **Download NLTK resources**
-   Inside Python:
-
-   ```python
-   import nltk
-   nltk.download('vader_lexicon')
-   nltk.download('stopwords')
-   ```
-
-4. **Get a New York Times API key**
-
-   * Sign up at [NYTimes Developer](https://developer.nytimes.com/)
-   * Create an app and copy your API key.
-   * Replace the placeholder API key in the notebook with your own:
-
-     ```python
-     nyt = NYTAPI("YOUR_API_KEY_HERE", parse_dates=True)
-     ```
-
-5. **Run the notebook**
-   Open Jupyter and start the analysis:
-
-   ```bash
-   jupyter notebook _NYTDronesAnalysisIly.ipynb
-   ```
-
-6. **Outputs generated**
-
-   * A CSV of drone-related NYTimes articles.
-   * A CSV of reader comments linked to those articles.
-   * Sentiment distributions and keyword frequency plots.
+- Fetching and analyzing 50 drone-related articles from The New York Times
+- Collecting 6,018 public comments from 22 articles with active discussions
+- Performing sentiment analysis and emotion detection on both datasets
+- Comparing how media frames drone issues versus public reactions
 
 ---
 
-### Notes
+## Key Features
 
-* The notebook includes custom functions to fetch articles, pull reader comments, and save them with metadata.
-* By default, it looks for the topic **“drones”**, but you can change the query to analyze other keywords.
-* Results include both **article framing** (headlines + abstracts) and **public sentiment** (reader comments + tweets).
+- Data Collection: Automated NYT article and comment retrieval using the NYT API
+- Text Processing: Advanced text cleaning and preprocessing
+- Keyword Analysis: Frequency analysis of the most common terms in articles
+- Emotion Detection: Multi-emotion analysis using text2emotion library
+- Comparative Analysis: Side-by-side comparison of media vs. public sentiment
+- Data Visualization: Charts and graphs showing sentiment distributions
 
+---
+
+## Setup 
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/drone-sentiment-analysis.git
+cd drone-sentiment-analysis
 ```
 
+2. Install required dependencies:
+```bash
+pip install pynytimes
+pip install nytimes-scraper
+pip install text2emotion
+pip install pandas matplotlib
+pip install nltk
+pip install emoji==1.6.3
+```
+
+3. Download NLTK data:
+```python
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+```
+
+4. Get a New York Times API key:
+   - Visit [NYT Developer Portal](https://developer.nytimes.com/)
+   - Create an account and generate an API key
+   - Replace the API key in the code
+
+## Data Sources
+
+#### Articles Dataset
+
+- Source: New York Times Article Search API
+- Query: "drones and drone sightings"
+- Count: 50 articles
+- Time Range: 2012-2025
+- Fields: Headlines, abstracts, URLs, publication dates, sections
+
+#### Comments Dataset
+
+- Source: NYT Comments API via nytimes-scraper
+- Total Comments: 6,018 comments
+- Articles with Comments: 22 unique articles
+- Comment Types: 3,398 top-level comments, 2,620 replies
+- Fields: Comment body, timestamps, user info, article metadata
+
+## Technologies Used
+
+- **Python 3.12+**
+- **APIs**: NYTimes Article Search API, NYTimes Comments API
+- **Libraries**: 
+  - `pynytimes` - NYT API wrapper
+  - `nytimes-scraper` - Comment extraction
+  - `text2emotion` - Emotion detection
+  - `pandas` - Data manipulation
+  - `matplotlib` - Data visualization
+  - `nltk` - Natural language processing
+  - `re` - Text processing
+
+## Links
+
+- [New York Times Developer Portal](https://developer.nytimes.com/)
+- [text2emotion Documentation](https://pypi.org/project/text2emotion/)
+- [NLTK Documentation](https://www.nltk.org/)
 
