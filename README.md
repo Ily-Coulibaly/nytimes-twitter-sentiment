@@ -13,8 +13,6 @@ Using NLP and emotion detection, this analysis compares how The New York Times c
 
 <img width="953" height="430" alt="Screenshot 2025-09-01 at 9 09 09 AM" src="https://github.com/user-attachments/assets/840cf1cd-147f-4bbb-8368-4b701deb844d" />
 
-**Key Finding**: Public comments show 2.7x higher emotional intensity than articles, with fear dominating both datasets.
-
 ---
 
 ## Key Features
