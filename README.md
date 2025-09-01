@@ -1,8 +1,8 @@
 # NYTimes Articles vs. Public Comments Sentiment Analysis
 
-## About
-
 Ever wonder if news articles on a specific topic aligns with how people really feel about actual topic ? This project digs into that question by analyzing the emotional language gap between professional journalism and public reactions.
+
+## Project Overview
 
 Using NLP and emotion detection, this analysis compares how The New York Times covers drone stories versus how readers respond in the comments section by:
 
