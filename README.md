@@ -4,6 +4,7 @@ Ever wonder if news articles on a specific topic aligns with how people really f
 
 This project analyzes how drones are framed in New York Times articles versus how the public perceives them through online discussions. Using [Natural Language Processing (NLP)](https://web.stanford.edu/~jurafsky/slp3/) techniques, specifically [emotion detection](https://ieeexplore.ieee.org/document/8456602) and keyword analysis, we compare media coverage with public sentiment to identify disparities in discourse.
 
+---
 
 <img width="953" height="430" alt="Screenshot 2025-09-01 at 9 09 09 AM" src="https://github.com/user-attachments/assets/840cf1cd-147f-4bbb-8368-4b701deb844d" />
 
